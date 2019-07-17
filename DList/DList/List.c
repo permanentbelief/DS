@@ -18,46 +18,66 @@ void ListInit(List* plist)
 }
 void ListDestory(List* plist)
 {
-	
+	assert(plist);
+	ListNode* head = plist->_head;
+	if (head == NULL)
+	{
+		return;
+	}
+	ListNode* cur = head->_next;
+	while (cur != head)
+	{
+		ListNode* tmp = cur->_next;
+		free(cur);
+		cur = tmp;
+	}
+	free(head);
 }
 
-void ListPushBack(List* plist, LTDataType x)
+void ListPushBack(List* plist, LTDataType x)//Î²²å
 {
 	assert(plist);
-	ListNode * head = plist->_head;
+	/*ListNode * head = plist->_head;
 	ListNode*  newnode = BuyNode(x);
 	head->_prev->_next = newnode;
 	newnode->_prev = head->_prev;
 	newnode->_next = head;
-	head->_prev = newnode;
+	head->_prev = newnode;*/
+	ListInsert(plist->_head->_prev->_next, x);
+
 }
-void ListPopBack(List* plist)
+void ListPopBack(List* plist) //Î²É¾
 {
 	assert(plist->_head);
-	ListNode* head = plist->_head;
+	/*ListNode* head = plist->_head;
 	head->_prev->_prev->_next = head; 
 	head->_prev = head->_prev->_prev;
-	
+	*/
+	ListErase(plist->_head->_prev->_prev->_next);
 }
 void ListPushFront(List* plist, LTDataType x) // Ç°²å
 {
 	assert(plist);
-	ListNode* newnode = BuyNode(x);
+	/*ListNode* newnode = BuyNode(x);
 	ListNode* head = plist->_head;
 	newnode->_next = head->_next;
 	head->_next = newnode;
 	newnode->_prev = head;
-	head->_next->_prev = newnode;
+	head->_next->_prev = newnode;*/
+	ListInsert(plist->_head->_prev, x);
+
 }
-void ListPopFront(List* plist)
+void ListPopFront(List* plist)    //Ç°É¾
 {
 	assert(plist->_head);
-	ListNode* head = plist->_head;
-	ListNode* first = plist->_head->_next;
-	first->_next->_prev = head;
-	head->_next = first->_next;
-	free(first);
-	first = NULL;
+	//ListNode* head = plist->_head;
+	//ListNode* first = plist->_head->_next;
+	//first->_next->_prev = head;
+	//head->_next = first->_next;
+	//free(first);
+	//first = NULL;
+	
+	ListErase(plist->_head->_next);
 }
 
 ListNode* ListFind(List* plist, LTDataType x)
@@ -71,6 +91,7 @@ ListNode* ListFind(List* plist, LTDataType x)
 		{
 			return cur;
 		}
+		cur = cur->_next;
 	}
 	return NULL;
 }
@@ -87,6 +108,13 @@ void ListInsert(ListNode* pos, LTDataType x)
 
 void ListErase(ListNode * pos)
 {
+	assert(pos);
+	pos->_prev->_next = pos->_next;
+	pos->_next->_prev = pos->_prev;
+	free(pos);
+	pos = NULL;
+
+
 
 }
 

@@ -1,9 +1,9 @@
-﻿生成启动时间为 2019/7/16 17:21:52。
+﻿生成启动时间为 2019/7/17 17:05:47。
      1>项目“D:\Documents\Visual Studio 2013\Projects\数据结构\DList\DList\DList.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          E:\AE\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
          test.c
-     1>d:\documents\visual studio 2013\projects\数据结构\dlist\dlist\test.c(45): warning C4013: “system”未定义；假设外部返回 int
+     1>d:\documents\visual studio 2013\projects\数据结构\dlist\dlist\test.c(126): warning C4013: “system”未定义；假设外部返回 int
        Link:
          E:\AE\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2013\Projects\数据结构\DList\Debug\DList.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\Visual Studio 2013\Projects\数据结构\DList\Debug\DList.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2013\Projects\数据结构\DList\Debug\DList.lib" /MACHINE:X86 Debug\List.obj
          Debug\test.obj
@@ -12,4 +12,4 @@
 
 生成成功。
 
-已用时间 00:00:00.46
+已用时间 00:00:00.44
