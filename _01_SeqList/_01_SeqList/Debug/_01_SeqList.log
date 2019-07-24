@@ -1,0 +1,25 @@
+﻿生成启动时间为 2019/7/24 17:26:30。
+     1>项目“D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\_01_SeqList\_01_SeqList.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\AE\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt SeqList.c
+         SeqList.c
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(44): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(74): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(84): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(91): warning C4047: “return”:“int”与“void *”的间接级别不同
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(120): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(125): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(146): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(148): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(164): warning C4033: “SeqListBinaryFind”必须返回值
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(168): warning C4033: “SeqListBinaryFind”必须返回值
+     1>d:\documents\visual studio 2013\projects\数据结构\_01_seqlist\_01_seqlist\seqlist.c(189): warning C4715: “SeqListBinaryFind”: 不是所有的控件路径都返回值
+       Link:
+         E:\AE\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\Debug\_01_SeqList.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\Debug\_01_SeqList.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\Debug\_01_SeqList.lib" /MACHINE:X86 Debug\SeqList.obj
+         Debug\test.obj
+         _01_SeqList.vcxproj -> D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\Debug\_01_SeqList.exe
+     1>已完成生成项目“D:\Documents\Visual Studio 2013\Projects\数据结构\_01_SeqList\_01_SeqList\_01_SeqList.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.37
